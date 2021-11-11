@@ -2,7 +2,6 @@ from flask import Flask, render_template,request
 import os
 app = Flask(__name__)
 
-
 @app.route('/')
 def fun():
     return render_template('index.html')
@@ -18,6 +17,7 @@ def prediction():
     
     request_data = request.get_json()
     
+    print("Printing Request Data")
     print(request_data)
     
     values = request_data['input_data'][0]['values']
