@@ -46,6 +46,8 @@ def prediction():
     fields.append('probability')
 
     values = test_data.values.tolist()
+    
+    ## Output Formatting For OpenScale
             
     i = 0
     while i < len(y_pred) :
